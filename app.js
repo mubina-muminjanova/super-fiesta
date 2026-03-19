@@ -1,35 +1,50 @@
-// number methods
-let num = 1_000_000;
-let myNum = 6.3
-// rounding
-console.log(Math.round(myNum)); //normal yaxlitlash
-console.log(Math.floor(myNum)); //pastga qarab yaxlitlash
-console.log(Math.ceil(myNum)); //yuqoriga qarab yaxlitlash
-console.log(Math.trunc(myNum)); //sonning butun qismini qaytaradi
+// // 
+// // 
+// // 
+// // 
+// // 
+// // 
+// // symbol
 
-// isNaN - number bo'lmagan ma'lumot turimi
-// NaN - not a Number
-console.log(isNaN('string'));
-console.log(NaN === NaN);
+// // NonPrimitive Data Types
+// // Object -> Array, Function
 
-// isFinite
-console.log(isFinite(10));
-console.log(isFinite(Infinity));
-console.log(isFinite('str'));
+// const cars = ['Cobalt', 'BMW', 'Damas', 'Gentra', 10, true]
+// // Array methods
+// console.log(cars.length); // uzunlik
+// console.log(cars[6]); // index
 
-// toFixed
-let num2 = 12.3456789123456
-console.log(num2.toFixed(4));
+//  // array elementlarini index yordamida o'zgartiruvchi
+// cars[0] = 'Nexia 3'
+// console.log(cars[0]);
 
-//parseInt va floatInt
-console.log(parseInt('100.9px')); //butun qismni ajratadi 
-console.log(parseFloat('100.9px')); //butun va qoldiq qismini ajratadi
+// // array elementlarini stringga o'girish
+// console.log(cars,toString());
 
-// max, min, pow
-console.log(Math.max(1, 2, 3, 4, 5, 6));
-console.log(Math.min(1, 2, 3, 4, 5, 6));
-console.log(Math.pow(3, 4));
-console.log(2 ** 3);
+// // array elementlarining qaysi ma'lumot turida ekanini tekshirish
+// console.log(typeof(cars[8]));
 
-// random
-console.log(Math.round(Math.random() * 100)); //0 va bir orasidagi tasodifiy sonlar
+// // array elementlarini tartiblash
+// console.log(cars.sort());
+
+// // arrayning oxirgi index iga ulanish
+// console.log(cars[cars.length - 1]);
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+const numbers = [1, 2, 3, 4, 32]
+
+// for lopp - takrorlash operatori
+
+for(a of fruits) {
+    console.log(a);
+}
+
+for (key of numbers) {
+    if(key % 2 == 1) {
+     console.log(key, "toq son");
+    } else {
+        console.log(key, "juft son");
+    }
+}
+
+
